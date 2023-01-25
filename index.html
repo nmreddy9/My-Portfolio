@@ -1,40 +1,69 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-    <title>My Blog</title>
+  <head>
+    <title>My Great Blog</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+  </head>
+  <body>
     <header>
-        <h1>My Blog</h1>
+      <div class="container">
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a>
+              <ul class="dropdown">
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </nav>
+        <h1>My Great Blog</h1>
+      </div>
     </header>
     <main>
-        <h2>Latest Posts</h2>
-        <ul>
+      <div class="container">
+        <section class="featured-post">
+          <img src="featured-post-image.jpg" alt="Featured Post">
+          <h2>Featured Post Title</h2>
+          <p>Featured post content goes here...</p>
+          <a href="#" class="button">Read More</a>
+        </section>
+        <section class="recent-posts">
+          <h2>Recent Posts</h2>
+          <ul>
             <li>
-                <h3>Post Title</h3>
-                <p>Post content goes here...</p>
+              <img src="recent-post-image-1.jpg" alt="Recent Post 1">
+              <h3>Recent Post 1 Title</h3>
+              <p>Recent post 1 content goes here...</p>
+              <a href="#" class="button">Read More</a>
             </li>
             <li>
-                <h3>Another Post Title</h3>
-                <p>More post content goes here...</p>
+              <img src="recent-post-image-2.jpg" alt="Recent Post 2">
+              <h3>Recent Post 2 Title</h3>
+              <p>Recent post 2 content goes here...</p>
+              <a href="#" class="button">Read More</a>
             </li>
-        </ul>
+            <li>
+              <img src="recent-post-image-3.jpg" alt="Recent Post 3">
+              <h3>Recent Post 3 Title</h3>
+              <p>Recent post 3 content goes here...</p>
+              <a href="#" class="button">Read More</a>
+            </li>
+          </ul>
+        </section>
+        <aside>
+          <h2>About Me</h2>
+          <img src="author-image.jpg" alt="Author">
+          <p>Some information about the author of the blog goes here...</p>
+        </aside>
+      </div>
     </main>
-    <aside>
-        <h2>About Me</h2>
-        <p>Some information about the author of the blog goes here...</p>
-    </aside>
     <footer>
-        <p>Copyright © 2021 My Blog</p>
-    </footer>
-</body>
-</html>
+      <div class="container">
+        <p>Copyright © 2021
