@@ -19,13 +19,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="assets/images/NMReddy.JPG" style="width:45%;" class="w3-circle"><br><br>
+    <img src="/assets/images/NMReddy.JPG" style="width:45%;" class="w3-circle"><br><br>
     <h4><b>N_M_Reddy</b></h4>
     <p class="fa fa-briefcase  w3-text-grey" style="padding: 3%">    Senior Software Engineer</p>
   </div>
   <div class="w3-bar-block w3-margin">
     <!--<a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding "><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>--> 
-    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding" ><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="/about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding" ><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
   </div>
   <div class="w3-panel w3-large w3-center">
@@ -44,45 +44,62 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   <!-- Header -->
   <header id="portfolio">
-    <a href="#"><img src="assets/images/NMReddy.JPG" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <a href="#"><img src="/assets/images/NMReddy.JPG" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
     <h1><b>N_M_Reddy's Blog</b></h1>
     <div class="w3-section w3-bottombar w3-padding-16">
-      <a class="w3-button  w3-black" href="index.html"><i class="fa fa-home w3-margin-right" ></i>Home</a>
-      <a class="w3-button w3-white"  href="about.html">About</a>
+      <!--<span class="w3-margin-right">Filter:</span> -->
+      <a class="w3-button  w3-black" href="/index.html"><i class="fa fa-home w3-margin-right" ></i>Home</a>
+      <a class="w3-button w3-white"  href="/about.html">About</a>
+      <!--<a class="w3-button w3-white"><i class="fa fa-photo w3-margin-right"></i>Photos</a>-->
+      <!--<button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>About</button>-->
     </div>
     </div>
   </header>
   
   <!-- First Photo Grid-->
-  <div class="main-wrapper">
-	    	    
-	<article class="about-section py-5">
-	<div class="container">
-	 <h3 class="title mb-3 w3-center"><b>WELCOME TO THE BLOG..!</b></h3>
-			
-         <br>
-	 <h4><b>About me</b></h4>
-               <p> Hello and welcome! You can call me NMR, and I'm the creator of this website. I'm passionate about Engineering(Exploring, Experiencing,Developing). This website is a platform for me to share my experiences and knowledge with others. </p>
-	 <h4 class="mt-5"><b>Hobbies</b></h4>
-	      <p> • Badminton • Chess </p>
-	 <h4 class="mt-5"> <b>About the blog</b></h4>
-		<p> Here, In this blog you will find articles, resources that cover a wide range of topics related DevOps, MLOPs, ML, Tools that i used/using in my day to day life, some personal experiences and more which helps to grow together</p>
-	 <h4 class="mt-5"> <b>Skills Tools and Experiences</b></h4>
-	      <p> 
+  <div class="w3-row-padding">
+    <div class=" w3-margin-bottom w3-white">
+        <h3 class="title mb-3 w3-center"><b>WELCOME TO THE BLOG..!</b></h3>
+        <br>
+        <h4><b>About me</b></h4>
+            <p> Hello and welcome! You can call me NMR, and I'm the creator of this website. I'm passionate about Engineering(Exploring, Experiencing,Developing). This website is a platform for me to share my experiences and knowledge with others. </p>
+        <h4 class="mt-5"><b>Hobbies</b></h4>
+            <p> • Badminton • Chess </p>
+        <h4 class="mt-5"> <b>About the blog</b></h4>
+            <p> Here, In this blog you will find articles, resources that cover a wide range of topics related DevOps, MLOPs, ML, Tools that i used/using in my day to day life, some personal experiences and more which helps to grow together</p>
+        <h4 class="mt-5"> <b>Skills Tools and Experiences</b></h4>
+            <p> 
 	          <b>Programming:</b>
-                     Python • SQL • Shell Scipting
-	         <br>
-	        <b>Tools</b>
-	             GIT • Jenkins • Linux • Docker • DevOps • DataRobot • Airflow • 3D Printing 
-	        <br>
-	        <b>INTERESTS:</b>
-	             Explore and experinece everything that exists in the world:)
-	     </p>
-	</div>
-	</article><!--//about-section-->
+                   Python • SQL • Shell Scipting
+                   <br>
+	           <b>Tools</b>
+	               GIT • Jenkins • Linux • Docker • DevOps • DataRobot • Airflow • 3D Printing 
+	            <br>
+	            <b>INTERESTS:</b>
+	              Explore and experinece everything that exists in the world:)
+            </p>
+  
+    </div>
+   
+    
+  </div>
+  
+ 
 
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="/index.html" class="w3-bar-item w3-button w3-black">NEXT POST</a>
+      <!--<a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>-->
+    </div>
+  </div>
+ 
 
   <!-- Footer -->
 
