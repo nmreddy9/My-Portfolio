@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>N_M_Reddy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Trino and Hive: An Introduction to Distributed Query Engines for Big Data" />
+  <meta property="og:description" content="Trino and Hive are both data processing engines that can be used for distributed querying and analysis of large datasets in big data environments" />
+  <meta property="og:image" content="https://nmreddy9.github.io/images/blog_images/trino_and_hive.PNG" />
+  <meta property="og:url" content="https://nmreddy9.github.io/blog_posts/trino_and_hive.html" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-light-grey w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-center">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="/assets/images/NMReddy.JPG" style="width:45%;" class="w3-circle"><br><br>
+    <h4><b>N_M_Reddy</b></h4>
+    <p class="fa fa-briefcase  w3-text-grey" style="padding: 3%">    Senior Software Engineer</p>
+  </div>
+  <div class="w3-bar-block w3-margin">
+    <!--<a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding "><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>--> 
+    <a href="/about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding" ><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large w3-center">
+    <i class="fa fa-facebook w3-hover-opacity" style="padding: 3%"></i>
+    <i class="fa fa-instagram w3-hover-opacity" style="padding: 3%"></i>
+    <i class="fa fa-twitter w3-hover-opacity" style="padding: 3%"></i>
+    <i class="fa fa-linkedin w3-hover-opacity" style="padding: 3%"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/assets/images/NMReddy.JPG" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>N_M_Reddy's Blog</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <!--<span class="w3-margin-right">Filter:</span> -->
+      <a class="w3-button  w3-black" href="/index.html"><i class="fa fa-home w3-margin-right" ></i>Home</a>
+      <a class="w3-button w3-white"  href="/about.html">About</a>
+      <!--<a class="w3-button w3-white"><i class="fa fa-photo w3-margin-right"></i>Photos</a>-->
+      <!--<button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>About</button>-->
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class=" w3-margin-bottom w3-white">
+      <br>
+      <br>
+        <h2 class="w3-center"><b>Trino and Hive: An Introduction to Distributed Query Engines for Big Data</b></h2>
+         <div class="w3-center"> <img class= "w3-hover-opacity" src="" alt="" style="width:50%"></div>
+      <div class="w3-container w3-white">
+        
+        <p>
+            <h3>Overview on Trino and Hive:</h3>
+            <br>
+            <br>
+            Trino and Hive are both data processing engines that can be used for distributed querying and analysis of large datasets in big data environments. Here are some differences between the two:.
+            <div class="w3-center"> <img class= "w3-hover-opacity" src="/images/blog_images/trino_and_hive.PNG" alt="" style="width:50%"></div>
+            <br>
+            <br>
+            <h3>Architecture::</h3>
+              <br>
+              <br>
+              Trino (previously known as PrestoSQL) is a distributed SQL query engine that is designed to run on clusters of commodity hardware. It uses a shared-nothing architecture, meaning that each node in the cluster has its own CPU, memory, and storage resources.
+              <br>
+              <br>
+              Hive is a data warehouse system that provides a SQL-like interface to data stored in Hadoop Distributed File System (HDFS). It uses a shared-storage architecture, meaning that data is stored on a shared HDFS cluster and queried by multiple Hive nodes.
+              <br>
+              <br>
+            <b>Performance:</b>
+              <br>
+              <br>
+              Trino is known for its high performance and low latency, especially when it comes to interactive   querying of large datasets. This is due to its distributed query execution engine and its ability to push down computation to where the data resides.
+              <br>
+              <br>
+              Hive is slower than Trino when it comes to interactive querying, but it is optimized for batch processing of large datasets. It can also be faster than Trino for complex queries that involve multiple stages of processing.
+              <br>
+              <br>
+
+            <b>SQL compatibility:</b> 
+             <br>
+             <br>
+              Trino supports a wide range of SQL standards, including ANSI SQL, SQL:2003, and SQL:2011. It also has support for some advanced features such as window functions, complex data types, and user-defined functions (UDFs).
+             <br>
+             <br>
+              Hive supports a subset of SQL standards and has some Hive-specific extensions to SQL. It also has support for UDFs and the ability to define custom functions in languages such as Java, Python, and Scala.
+              <br>
+              <br>
+            <b>User interface:</b>
+            <br>
+            <br>
+               Trino has a web-based user interface (UI) called Trino Web UI, which provides a dashboard for monitoring query performance and cluster utilization. It also has a command-line interface (CLI) for executing queries.
+               <br>
+               <br>
+               Hive has a web-based UI called Hive Web UI, which provides a graphical interface for managing tables, partitions, and queries. It also has a CLI for executing queries.
+                <br>
+                <br>
+                In summary, Trino is designed for high-performance interactive querying of large datasets, while Hive is optimized for batch processing of large datasets. Trino has better SQL compatibility and a more modern architecture, while Hive has more advanced data warehousing features such as partitioning and bucketing. The choice between Trino and Hive depends on the specific use case and requirements of the project.
+                <br>
+                <br>
+                <b>Improved performance: </b> Trino is known for its high performance and speed, which can be especially useful for processing large and complex datasets. By using Trino on top of Hive, you can take advantage of Trino's fast query execution engine to accelerate your queries on Hive data.
+                <br>
+                <br>
+                <b>Advanced SQL capabilities: </b> Trino offers advanced SQL features and functions, such as window functions and array functions, that are not available in Hive or require more complex SQL statements to achieve the same result. By using Trino on top of Hive, you can leverage these advanced SQL capabilities to perform more sophisticated analysis on your data.
+                <br>
+                <br>
+                <b>Support for multiple data sources: </b> Trino can connect to multiple data sources, including Hive, MySQL, PostgreSQL, and more. By using Trino on top of Hive, you can combine data from multiple sources and run complex queries across them.
+                <br>
+                <br>
+                <b>Simplified data access: </b> Trino can create virtual tables that point to Hive data, making it easier to access and analyze data stored in Hive. This can simplify your data access process and reduce the need for complex ETL pipelines.
+                <br>
+                <br>
+                <b>Lower cost: </b>Since Hive is built on top of Hadoop, it can be more expensive to run and maintain than Trino, which can be deployed on commodity hardware. By using Trino on top of Hive, you can potentially reduce your infrastructure costs while still taking advantage of Hive's data warehousing capabilities.
+                <br>
+                <br>
+                Overall, using Trino on top of Hive can provide a powerful and flexible platform for processing big data, with the benefits of both Hive's data warehousing capabilities and Trino's performance and advanced SQL features.
+
+            <br>
+            <br>
+          </p>
+      </div>
+    </div>
+   
+    
+  </div>
+  
+ 
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="/index.html" class="w3-bar-item w3-button w3-black">Home</a>
+      <!--<a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>-->
+    </div>
+  </div>
+ 
+
+  <!-- Footer -->
+
+  
+  <div class="w3-black w3-center w3-padding-24">Managed by <a href="#" title="W3.CSS" target="_blank" class="w3-hover-opacity">N M Reddy</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
